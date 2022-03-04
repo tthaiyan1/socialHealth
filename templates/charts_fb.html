@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Social Monitoring{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1> Facebook Analysis Summary</h1>
+
+    <h2>Total Comments and Sentiment Across Businesses</h2>
+    <img id="imgtab" class="small" 
+    src='./static/fb_total_comments_across_business_FINAL_20151213.png', width = '450px'/>
+
+    <img id="imgtab" class="small" 
+    src= './static/fb_total_sentiment_compare_FINAL_20151213.png'], width = '450px'/>
+    
+    <h2>Sentiment Analysis of Comments</h2>
+    <img id="imgtab" class="small" 
+    src='./static/fb_total_sentiment_comments_across_business_FINAL_20151213.png', width = '450px' /> 
+    <img id="imgtab" class="small" 
+    src='./static/fb_comments_scatter_sentiment_post_FINAL_20151213.png', width = '450px' />
+
+</div>
+
+
+{% endblock %}

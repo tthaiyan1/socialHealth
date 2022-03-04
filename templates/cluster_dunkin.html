@@ -1,0 +1,410 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Social Monitoring{% endblock %}
+
+{% block page_content %}
+<head>
+<meta name=Title content="Cluster_Dunkin">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 14">
+<link rel=File-List href="Cluster_Dunkin_files/filelist.xml">
+<title>Cluster_Dunkin</title>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl65
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl66
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl67
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl68
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl69
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl70
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl71
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;}
+.xl72
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl73
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;}
+.xl74
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl75
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.xl76
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.xl77
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;}
+.xl78
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	vertical-align:middle;}
+.xl79
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl80
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl81
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+-->
+</style>
+</head>
+
+<body link=blue vlink=purple>
+
+<table border=0 cellpadding=0 cellspacing=0 width=650 style='border-collapse:
+ collapse;table-layout:fixed;width:650pt'>
+ <col width=65 style='width:65pt'>
+ <col class=xl65535 width=65 style='width:65pt'>
+ <col width=65 style='width:65pt'>
+ <col class=xl65535 width=65 style='width:65pt'>
+ <col width=65 style='width:65pt'>
+ <col class=xl65535 width=65 style='width:65pt'>
+ <col width=65 style='width:65pt'>
+ <col class=xl65535 width=65 style='width:65pt'>
+ <col width=65 style='width:65pt'>
+ <col class=xl65535 width=65 style='width:65pt'>
+ <tr height=18 style='height:18.0pt'>
+  <td colspan=10 height=18 class=xl65 width=650 style='border-right:.5pt solid black;
+  height:18.0pt;width:650pt'>DUNKIN DONUTS CLUSTER ANALYSIS RESULTS</td>
+ </tr>
+ <tr class=xl65535 height=18 style='height:18.0pt'>
+  <td colspan=2 height=18 class=xl80 style='border-right:.5pt solid black;
+  height:18.0pt'><span>Cluster 0Top Words:</span></td>
+  <td colspan=2 class=xl80 style='border-right:.5pt solid black;border-left:
+  none'><span>Cluster 1Top Words:</span></td>
+  <td colspan=2 class=xl80 style='border-right:.5pt solid black;border-left:
+  none'><span>Cluster 2Top Words:</span></td>
+  <td colspan=2 class=xl80 style='border-right:.5pt solid black;border-left:
+  none'><span>Cluster 3Top Words:</span></td>
+  <td colspan=2 class=xl80 style='border-right:.5pt solid black;border-left:
+  none'><span>Cluster 4Top Words:</span></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl70 style='height:18.0pt;border-top:none'><span>coffee:</td>
+  <td class=xl71 style='border-top:none'>188</span></td>
+  <td class=xl70 style='border-top:none;border-left:none'><span>love:</td>
+  <td class=xl75 style='border-top:none'>148</span></td>
+  <td class=xl70 style='border-top:none'><span>donut:</td>
+  <td class=xl71 style='border-top:none'>56</span></td>
+  <td class=xl76 style='border-top:none'><span>donuts:</td>
+  <td class=xl75 style='border-top:none'>241</span></td>
+  <td class=xl70 style='border-top:none'><span>donuts:</td>
+  <td class=xl71 style='border-top:none'>116</span></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl72 style='height:18.0pt'><span>donuts:</td>
+  <td class=xl73>165</span></td>
+  <td class=xl72 style='border-left:none'><span>coffee:</td>
+  <td class=xl77>144</span></td>
+  <td class=xl72><span>like:</td>
+  <td class=xl73>41</span></td>
+  <td class=xl78><span>dunkin:</td>
+  <td class=xl77>230</span></td>
+  <td class=xl72><span>coffee:</td>
+  <td class=xl73>108</span></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl72 style='height:18.0pt'><span>dunkin:</td>
+  <td class=xl73>149</span></td>
+  <td class=xl72 style='border-left:none'><span>good:</td>
+  <td class=xl77>141</span></td>
+  <td class=xl72><span>one:</td>
+  <td class=xl73>37</span></td>
+  <td class=xl78><span>coffee:</td>
+  <td class=xl77>177</span></td>
+  <td class=xl72><span>dunkin:</td>
+  <td class=xl73>105</span></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl72 style='height:18.0pt'><span>love:</td>
+  <td class=xl73>141</span></td>
+  <td class=xl72 style='border-left:none'><span>donuts:</td>
+  <td class=xl77>134</span></td>
+  <td class=xl72><span>good:</td>
+  <td class=xl73>30</span></td>
+  <td class=xl78><span>love:</td>
+  <td class=xl77>143</span></td>
+  <td class=xl72><span>love:</td>
+  <td class=xl73>103</span></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl72 style='height:18.0pt'><span>one:</td>
+  <td class=xl73>126</span></td>
+  <td class=xl72 style='border-left:none'><span>dd:</td>
+  <td class=xl77>119</span></td>
+  <td class=xl72><span>donuts:</td>
+  <td class=xl73>25</span></td>
+  <td class=xl78><span>dd:</td>
+  <td class=xl77>130</span></td>
+  <td class=xl72><span>good:</td>
+  <td class=xl73>96</span></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl72 style='height:18.0pt'><span>good:</td>
+  <td class=xl73>124</span></td>
+  <td class=xl72 style='border-left:none'><span>dunkin:</td>
+  <td class=xl77>115</span></td>
+  <td class=xl72><span>worth:</td>
+  <td class=xl73>24</span></td>
+  <td class=xl78><span>new:</td>
+  <td class=xl77>112</span></td>
+  <td class=xl72><span>dd:</td>
+  <td class=xl73>95</span></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl72 style='height:18.0pt'><span>dd:</td>
+  <td class=xl73>121</span></td>
+  <td class=xl72 style='border-left:none'><span>one:</td>
+  <td class=xl77>99</span></td>
+  <td class=xl72 align=right><span>10.41666667</td>
+  <td class=xl73>22</span></td>
+  <td class=xl78><span>year:</td>
+  <td class=xl77>103</span></td>
+  <td class=xl72><span>hot:</td>
+  <td class=xl73>89</span></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl72 style='height:18.0pt'><span>like:</td>
+  <td class=xl73>98</span></td>
+  <td class=xl72 style='border-left:none'><span>like:</td>
+  <td class=xl77>95</span></td>
+  <td class=xl72><span>glazed:</td>
+  <td class=xl73>21</span></td>
+  <td class=xl78><span>happy:</td>
+  <td class=xl77>98</span></td>
+  <td class=xl72><span>one:</td>
+  <td class=xl73>89</span></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl72 style='height:18.0pt'><span>donut:</td>
+  <td class=xl73>73</span></td>
+  <td class=xl72 style='border-left:none'><span>get:</td>
+  <td class=xl77>88</span></td>
+  <td class=xl72><span>price:</td>
+  <td class=xl73>21</span></td>
+  <td class=xl78><span>get:</td>
+  <td class=xl77>87</span></td>
+  <td class=xl72><span>chocolate:</td>
+  <td class=xl73>84</span></td>
+ </tr>
+ <tr height=18 style='height:18.0pt'>
+  <td height=18 class=xl68 style='height:18.0pt'><span>yummy:</td>
+  <td class=xl74>67</span></td>
+  <td class=xl68 style='border-left:none'><span>yummy:</td>
+  <td class=xl79>71</span></td>
+  <td class=xl68><span>love:</td>
+  <td class=xl74>20</span></td>
+  <td class=xl69><span>like:</td>
+  <td class=xl79>86</span></td>
+  <td class=xl68><span>like:</td>
+  <td class=xl74>75</span></td>
+ </tr>
+</table>
+
+</body>
+
+</div>
+
+{% endblock %}

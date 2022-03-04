@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Social Monitoring{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1> Relative Impact of Social Networks</h1>
+    
+
+    <h2>Facebook vs. Twitter</h2>
+    <p>Facebook post has more positive sentiment, and gathers more attention (likes), but Tweet gets shared more frequently</p>
+    <img id="imgtab" class="small" src='./static/fb_twitter_compare_comments_FINAL_20151213.png', width = '350px' /> 
+    <img id="imgtab" class="small" src='./static/fb_twitter_compare_like_FINAL_20151213.png', width = '350px'/>
+</div>
+<div>
+    <img id="imgtab" class="small" src='./static/fb_twitter_compare_sentiment_FINAL_20151213.png', width = '350px'/>
+    <img id="imgtab" class="small" src='./static/fb_twitter_compare_shared_FINAL_20151213.png', width = '350px'/>
+
+fb_twitter_compare_comments_FINAL_20151213.png
+fb_twitter_compare_like_FINAL_20151213.png
+fb_twitter_compare_sentiment_FINAL_20151213.png
+fb_twitter_compare_shared_FINAL_20151213.png
+
+    
+</div>
+
+{% endblock %}

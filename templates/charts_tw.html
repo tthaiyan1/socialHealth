@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Social Monitoring{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1> Twitter Analysis Summary</h1>
+    
+
+    <h2>Sentiment Analysis - Tweets and Comparison Across Companies</h2>
+   
+    <img id="imgtab" class="small" src='./static/twitter_comments_vs_sentiments_across_business_FINAL_20151213.png', width = '333px'/>
+    
+    <img id="imgtab" class="small" src='./static/twitter_total_sentiment_compare.png', width = '333px'/>
+    
+	<img id="imgtab" class="small" src='./static/twitter_comments_scatter_sentiment_tweet_FINAL_20151213.png', width = '333px' /> 
+    
+    
+
+    <h2>Total Tweets, Comments, Followers and Followings Across Businesses</h2>
+    
+    <img id="imgtab" class="small" src='./static/twitter_total_tweets_across_business.png', width = '225px'/>
+    <img id="imgtab" class="small" src='./static/twitter_total_comments_across_business.png', width = '225px'/>
+    <img id="imgtab" class="small" src='./static/twitter_total_followers_across_business.png', width = '225px'/>
+    <img id="imgtab" class="small" src='./static/twitter_total_followering_across_business.png', width = '225px'/>
+    
+    
+</div>
+
+{% endblock %}

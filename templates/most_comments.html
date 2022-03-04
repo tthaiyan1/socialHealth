@@ -1,0 +1,31 @@
+{% extends "download.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Social Monitoring{% endblock %}
+
+{% block page_content %}
+
+<a href='#most_comments'><h2>Most Commented Posts</h2></a>
+
+<table class="t1" summary="Top 10 ______ posts" >
+<caption>Most Commented Posts</caption>
+<thead>
+<tr><th>Rank</th><th>Message</th><th>Count</th></tr>
+</thead>
+<tfoot>
+<tr><th colspan="3"></th></tr>
+</tfoot>
+<tbody>
+<tr><th>1</th><td>  Thank you all for liking, sharing and commenting on the photo... </td><td>  5465 </td></tr>
+<tr><th>2</th><td>  Thank you all for liking, sharing and commenting on the photo... </td><td>  5465</td></tr>
+<tr><th>3</th><td>  DRIVING LUXURY. \nThe all-new BMW 7 Series represents precisi... </td><td>  5098</td></tr>
+<tr><th>4</th><td>  A scenic drive through the mountains. \nJason Dodd drove the ... </td><td>  2089</td></tr>
+<tr><th>5</th><td>  An eye for details. \nSam Hurley (www.instagram.com/samhurley... </td><td>  1579</td></tr>
+<tr><th>6</th><td>  There are many great stories from BMW drivers from around the... </td><td>  1321</td></tr>
+<tr><th>7</th><td> Let’s take a step into the future with highly automated drivi... </td><td>  1299</td></tr>
+<tr><th>8</th><td>  Describe this car in one word.\n\n_____________\n\nBMW i8 plu... </td><td>  1284</td></tr>
+<tr><th>9</th><td>                  Dashing through the snow, in a 431 horse sleigh. </td><td>  1280</td></tr>
+<tr><th>10</th><td>  Another story about a special relationship between a BMW and ... </td><td>  1257</td></tr>
+</tbody>
+</table>
+
+{% endblock %}

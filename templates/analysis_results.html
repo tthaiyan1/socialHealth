@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}MASS Perception{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Social Media Analysis Results</h1>
+    <h2>The results of the 
+    	{{ analysis_type }} 
+    	analysis for 
+    	{{ name }} 
+    	posts on
+    	{{ social_network }}
+    	for the last 
+    	{{ days }} 
+    	days are provided below: </h2>
+</div>
+<div>    
+    <p>{{ analysis_results}}</p>
+    
+
+</div>
+
+{% endblock %}

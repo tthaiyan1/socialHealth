@@ -1,0 +1,89 @@
+ {% extends "download.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Social Monitoring{% endblock %}
+
+{% block page_content %}
+<div>    
+   {{ wtf.quick_form(form) }}
+    
+
+</div>
+<a href='#most_comments'><h2>Most Commented Posts</h2></a>
+
+<table class="t1" summary="Top 10 ______ posts" >
+<caption>Most Commented Posts</caption>
+<thead>
+<tr><th>Rank</th><th>Message</th><th>Count</th></tr>
+</thead>
+<tfoot>
+<tr><th colspan="3"></th></tr>
+</tfoot>
+<tbody>
+<tr><th>1</th><td>  Thank you all for liking, sharing and commenting on the photo... </td><td>  5465 </td></tr>
+<tr><th>2</th><td>  Thank you all for liking, sharing and commenting on the photo... </td><td>  5465</td></tr>
+<tr><th>3</th><td>  DRIVING LUXURY. \nThe all-new BMW 7 Series represents precisi... </td><td>  5098</td></tr>
+<tr><th>4</th><td>  A scenic drive through the mountains. \nJason Dodd drove the ... </td><td>  2089</td></tr>
+<tr><th>5</th><td>  An eye for details. \nSam Hurley (www.instagram.com/samhurley... </td><td>  1579</td></tr>
+<tr><th>6</th><td>  There are many great stories from BMW drivers from around the... </td><td>  1321</td></tr>
+<tr><th>7</th><td> Let’s take a step into the future with highly automated drivi... </td><td>  1299</td></tr>
+<tr><th>8</th><td>  Describe this car in one word.\n\n_____________\n\nBMW i8 plu... </td><td>  1284</td></tr>
+<tr><th>9</th><td>                  Dashing through the snow, in a 431 horse sleigh. </td><td>  1280</td></tr>
+<tr><th>10</th><td>  Another story about a special relationship between a BMW and ... </td><td>  1257</td></tr>
+</tbody>
+</table>
+<p></p>
+<p></p>
+<a href='#most_positive'><h2>Most Positive Posts</h2></a>
+<table class="t1" summary="Top 10 ______ posts" >
+<caption>Most Positive Posts</caption>
+<thead>
+<tr><th>Rank</th><th>Message</th><th>Sentiment Score</th></tr>
+</thead>
+<tfoot>
+<tr><th colspan="3"></th></tr>
+</tfoot>
+<tbody>
+<tr><th>1</th><td>   Dear Winter,\nWe're driving full speed ahead for sunshine and...  </td><td>0.272767</td></tr>
+<tr><th>2</th><td>   Well done!\nThe boys secured the 2015 DTM Manufacturers' Cham...  </td><td>0.269257</td></tr>
+<tr><th>3</th><td>  Feel a Whole Lotta Love for your BMW? Then check out our #BMW...  </td><td>0.265438</td></tr>
+<tr><th>4</th><td>  Shining bright like diamonds. A line-up of classics brought t...  </td><td>0.254259</td></tr>
+<tr><th>5</th><td>  Not just a hybrid of gas and electricity. This BMW 3 Series w...  </td><td>0.247514</td></tr>
+<tr><th>6</th><td>  Just for once let's slow down and watch The Slow Mo Guys taki... </td><td> 0.245873</td></tr>
+<tr><th>7</th><td>                                Exploring Downtown LA in the BMW X6 </td><td> 0.244347</td></tr>
+<tr><th>8</th><td>   Ever stylish. The BMW Z1 cockpit in 1987. BMW Classic #Throwb... </td><td> 0.244103</td></tr>
+<tr><th>9</th><td>   The Panorama glass roof Sky Lounge of the all-new BMW 7 Serie... </td><td> 0.243252</td></tr>
+<tr><th>10</th><td>    A horse is not a home, but with lush leather and an unmatched...</td><td>  0.241184</td></tr>
+</tbody>
+</table>
+<p></p>
+<p></p>
+<a href='#most_negative'><h2>Most Negative Posts</h2></a>
+<table class="t1" summary="Top 10 ______ posts" >
+<caption>Most Negative Posts</caption>
+<thead>
+<tr><th>Rank</th><th>Message</th><th>Sentiment Score</th></tr>
+</thead>
+<tfoot>
+<tr><th colspan="3"></th></tr>
+</tfoot>
+<tbody>
+<tr><th>1</th><td> The first-ever BMW 2 Series Gran Tourer is the world’s first ... </td><td>-0.054432</td></tr>
+<tr><th>2</th><td> Enjoy driving your BMW to the full. Enjoy every second of it.... </td><td>-0.035714</td></tr>
+<tr><th>3</th><td>  Q̶u̶a̶l̶i̶t̶y̶,̶ ̶n̶o̶t̶ ̶q̶u̶a̶n̶t̶i̶t̶y̶. Quality, quantity... </td><td>-0.030761</td></tr>
+<tr><th>4</th><td>  Versatility all round.\nThe first-ever BMW 2 Series Gran Tour... </td><td>-0.026755</td></tr>
+<tr><th>5</th><td>  The family member who never complains. Even when he has to st... </td><td>-0.021595</td></tr>
+<tr><th>6</th><td>  Gearing up for an adventure? Tell us about the road trips you... </td><td>-0.002407</td></tr>
+<tr><th>7</th><td>  Golf pros and BMW have one thing in common, they are #DRIVENB... </td><td>-0.000685</td></tr>
+<tr><th>8</th><td> Pure diving pleasure: BMW twenty thousand leagues under the s... </td><td> 0.000000</td></tr>
+<tr><th>9</th><td>  Wonderwall.\nBobby was out driving on some of California's be... </td><td> 0.017514</td></tr>
+<tr><th>10</th><td>            Say "yes" to adventure. The BMW 2 Series Active Tourer.  </td><td>0.021998</td></tr>
+
+</tbody>
+</table>
+<p></p>
+<div>    
+   {{ wtf.quick_form(form) }}
+    
+
+</div>
+{% endblock %}

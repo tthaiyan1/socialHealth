@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Social Monitoring{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+  
+    <h2>{{ social_network }} has been searched for mentions of 
+    {{ name }}
+    during the last 
+    {{ days }}
+    days and posts have been downloaded for analysis.
+</h2>
+</div>
+<div>    
+   {{ wtf.quick_form(form) }}
+    
+
+</div>
+
+{% endblock %}

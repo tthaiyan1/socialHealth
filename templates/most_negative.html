@@ -1,0 +1,32 @@
+ {% extends "download.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Social Monitoring{% endblock %}
+
+{% block page_content %}
+
+<p></p>
+<a href='#most_negative'><h2>Most Negative Posts</h2></a>
+<table class="t1" summary="Top 10 ______ posts" >
+<caption>Most Negative Posts</caption>
+<thead>
+<tr><th>Rank</th><th>Message</th><th>Sentiment Score</th></tr>
+</thead>
+<tfoot>
+<tr><th colspan="3"></th></tr>
+</tfoot>
+<tbody>
+<tr><th>1</th><td> The first-ever BMW 2 Series Gran Tourer is the world’s first ... </td><td>-0.054432</td></tr>
+<tr><th>2</th><td> Enjoy driving your BMW to the full. Enjoy every second of it.... </td><td>-0.035714</td></tr>
+<tr><th>3</th><td>  Q̶u̶a̶l̶i̶t̶y̶,̶ ̶n̶o̶t̶ ̶q̶u̶a̶n̶t̶i̶t̶y̶. Quality, quantity... </td><td>-0.030761</td></tr>
+<tr><th>4</th><td>  Versatility all round.\nThe first-ever BMW 2 Series Gran Tour... </td><td>-0.026755</td></tr>
+<tr><th>5</th><td>  The family member who never complains. Even when he has to st... </td><td>-0.021595</td></tr>
+<tr><th>6</th><td>  Gearing up for an adventure? Tell us about the road trips you... </td><td>-0.002407</td></tr>
+<tr><th>7</th><td>  Golf pros and BMW have one thing in common, they are #DRIVENB... </td><td>-0.000685</td></tr>
+<tr><th>8</th><td> Pure diving pleasure: BMW twenty thousand leagues under the s... </td><td> 0.000000</td></tr>
+<tr><th>9</th><td>  Wonderwall.\nBobby was out driving on some of California's be... </td><td> 0.017514</td></tr>
+<tr><th>10</th><td>            Say "yes" to adventure. The BMW 2 Series Active Tourer.  </td><td>0.021998</td></tr>
+
+</tbody>
+</table>
+
+{% endblock %}

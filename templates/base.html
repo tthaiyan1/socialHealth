@@ -1,0 +1,106 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Social Monitoring{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename='social.jpeg') }}" type="image/x-icon">
+<link rel="icon" href="{{ url_for('static', filename='social.jpeg') }}" type="image/x-icon">
+{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Social Monitoring</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Networks <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href= {{url_for('charts') }} >Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Yelp <em>(coming soon)</em></a></li>
+                        <li><a href="#">LinkedIn <em>(coming soon)</em></a></li>
+                    </ul>
+                 </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Businesses <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Audi</a></li>
+                        <li><a href="#">BMW</a></li>
+                        <li><a href="#">Mercedes-Benz</a></li>
+                        <li><a href="#">Lexus</a></li>
+                        <li><a href="#">JC Penney's</a></li>
+                        <li><a href="#">Target</a></li>
+                        <li><a href="#">Walmart</a></li>
+                        <li><a href="#">Unilever</a></li>
+                        <li><a href="#">Proctor and Gambel</a></li>
+                        <li><a href="#">Starbucks</a></li>
+                        <li><a href="#">Visa</a></li>
+                        <li><a href="#">MasterCard</a></li>
+                        <li><a href="#">American Express</a></li>
+                    </ul>
+                 </li>
+                 <li>
+                    <a href="#">About Social Monitoring</a>
+                  </li>
+            </ul>
+             <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+        </div>
+
+
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
+    {% block page_content %}{% endblock %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script>
+
+$(document).ready(function () {
+        var small={width: {{ image_width_small }},height: {{ image_height_small }}};
+        var large={width: {{ image_width_large }},height: {{ image_height_large }}};
+        var count=1; 
+        $("img").css(small).on('click',function () { 
+            $(this).animate((count==1)?small:large);
+            count = 1-count;
+        });
+    });
+    
+
+</script>
+{% endblock %}
+
+

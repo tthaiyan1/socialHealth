@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Social Monitoring{% endblock %}
+<head>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script>
+
+$(document).ready(function () {
+        var small={width: {{ image_width_small }},height: {{ image_height_small }}};
+        var large={width: {{ image_width_large }},height: {{ image_height_large }}};
+        var count=1; 
+        $("img").css(small).on('click',function () { 
+            $(this).animate((count==1)?small:large);
+            count = 1-count;
+        });
+    });
+    
+
+</script>
+
+</head>
+{% block page_content %}
+<div class="page-header">
+    <h1>Social Media Analysis Summary Charts</h1>
+    <h2>{{ social_network }}</h2>
+
+<h4> Chart 1 - {{ title1 }} </h4>
+<img id="imgtab" class="small" src={{ image1 }} {{ default_image_width }}/>
+
+<h4>Chart 2 - {{ title2 }} </h4>
+<img id="imgtab" class="small" src= {{ image2 }} width= {{ default_image_width }}/>
+
+<h4>Chart 3 - {{ title3 }} </h4>
+<img id="imgtab" class="small" src= {{ image3 }} width= {{ default_image_width }}/>
+
+<h4>Chart 4 - {{ title4 }} </h4>
+<img id="imgtab" class="small" src= {{ image4 }} width= {{ default_image_width }}/>
+
+<h4>Chart 5 - {{ title5 }} </h4>
+<img id="imgtab" class="small" src= {{ image5 }} width= {{ default_image_width }}/>
+
+<h4>Chart 6 - {{ title6 }} </h4>
+<img id="imgtab" class="small" src= {{ image6 }} width= {{ default_image_width }}/>
+
+<h4>Chart 7 - {{ title7 }} </h4>
+<img id="imgtab" class="small" src= {{ image7 }} width= {{ default_image_width }}/>
+
+</div>
+
+{% endblock %}
