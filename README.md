@@ -7,4 +7,4 @@ app.py is the main Flask web application file. templates and static folder is fo
 
 fb_download_complete_sql.py and twitter_download_complete_sql.py is the main functions to download data from Facebook and Twitter and save data into a MySQL database
 
-AnalysisEngine.ipynb is an Jupyter iPython notebook for generating analytics result and visualziation based on raw Facebook and Twitter data
+AnalysisEngine.ipynb is a Jupyter iPython notebook for generating analytics result and visualziation based on raw Facebook and Twitter data
